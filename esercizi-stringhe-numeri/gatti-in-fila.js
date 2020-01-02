@@ -19,9 +19,9 @@
 */
 
 var cats = 44;
-var catsperrow = 6;
-var rownumber = cats / catsperrow; // numero file
-var remainingcats = cats % catsperrow;  // gatti mancanti per completare ultima fila
+var inLine = 6;
 
-console.log(Math.ceil(rownumber));
-console.log(Math.ceil(remainingcats));
+var numLines = Math.ceil(cats/inLine); // numero file
+var missingCats = (numLines*inLine)-cats;  // gatti mancanti per completare ultima fila
+
+console.log(`${cats} gatti in fila per ${inLine} si unirono compatti in ${numLines} file. Nell'ultima fila rimasero ${missingCats} posti gatto disponibili.`);

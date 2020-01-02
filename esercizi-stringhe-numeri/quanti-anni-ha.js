@@ -12,10 +12,9 @@
   http://www.imparareaprogrammare.it
 */
 
-var current_year = 2019;
-var year_birth = 1980;
-var actual_age = 'current_year' - 'year_birth';
-var to_100_diff = 100 - 'to_100_diff';
+var currentYear = 2019;
+var yearBirth = 1980;
+var actualAge = currentYear-yearBirth;
+var to100Diff = 100-actualAge;
 
-console.log(actual_age);
-console.log(to_100_diff);
+console.log(`ho ${actualAge} anni e per arrivare a 100 me ne mancano ${to100Diff}.`);
