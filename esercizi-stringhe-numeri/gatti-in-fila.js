@@ -19,3 +19,9 @@
 */
 
 var cats = 44;
+var catsperrow = 6;
+var rownumber = cats / catsperrow; // numero file
+var remainingcats = cats % catsperrow;  // gatti mancanti per completare ultima fila
+
+console.log(Math.ceil(rownumber));
+console.log(Math.ceil(remainingcats));
