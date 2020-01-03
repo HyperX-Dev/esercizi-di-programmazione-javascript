@@ -12,3 +12,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var totSec = 1199773;
+
+var days = totSec/86400;
+var hours = totSec/3600;
+var mins = totSec%3600/60;
+var secs = totSec-Math.floor(hours)*3600-Math.floor(mins)*60;
+
+console.log(`${totSec} secondi corrispondono a ${Math.floor(days)} giorni ${Math.floor(hours)} ore, ${Math.floor(mins)} minuti e ${Math.floor(secs)} secondi.`);
