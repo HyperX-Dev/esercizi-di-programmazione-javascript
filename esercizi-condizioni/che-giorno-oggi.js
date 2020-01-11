@@ -22,3 +22,46 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var chosenDay = 8
+
+const lun = 'Lunedì';
+const mar = 'Martedì';
+const mer = 'Mercoledì';
+const gio = 'Giovedì';
+const ven = 'Venerdì';
+const sab = 'Sabato';
+const dom = 'Domenica';
+
+switch (chosenDay) {
+  case 1:
+  console.log(`Il giorno selezionato è ${lun}.`);
+    break;
+
+  case 2:
+  console.log(`il giorno selezionato è ${mar}.`);
+    break;
+
+  case 3:
+  console.log(`il giorno selezionato è ${mer}.`);
+    break;
+
+  case 4:
+  console.log(`il giorno selezionato è ${gio}.`);
+    break;
+
+  case 5:
+    console.log(`il giorno selezionato è ${ven}.`);
+    break;
+
+  case 6:
+    console.log(`il giorno selezionato è ${sab}.`);
+    break;
+
+  case 7:
+    console.log(`il giorno selezionato è ${dom}.`);
+    break;
+
+  default:
+    console.log('Mi dispiace, il giorno selezionato non esiste! Ritenta e sarai più fortunato.');
+}

@@ -19,3 +19,41 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var numRandom = Math.random() * (100-1) + 1;
+console.log(`Il numero estratto è ${Math.floor(numRandom)}`);
+
+var player1 = 'Gianluca';
+var numPlayer1 = 34;
+var difference = function (numRandom, numPlayer1) {
+  return Math.abs(numRandom - numPlayer1);
+}
+
+console.log(difference);
+
+/*
+var diffPlayer1High = numPlayer1 - numRandom    // differenza con numero giocatore 1 più alto del numero estratto
+var diffPlayer1Low = numRandom - numPlayer1     // differenza con numero giocatore 1 più basso del numero estratto
+
+var player2 = 'Francesca';
+var numPlayer2 = 66;
+var diffPlayer2High = numPlayer2 - numRandom    // differenza con numero giocatore 2 più alto del numero estratto
+var diffPlayer2Low = numRandom - numPlayer2     // differenza con numero giocatore 2 più basso del numero estratto
+
+
+if (numPlayer1 == numRandom) {
+  console.log(`Complimenti ${player1}'!' Hai indovinato il numero misterioso!`);
+} else if (numPlayer2 == numRandom) {
+  console.log(`Complimenti ${player2}'!' Hai indovinato il numero misterioso!`);
+} else if (diffPlayer1High < diffPlayer2High || diffPlayer1High < diffPlayer2Low) {
+  console.log(`Purtroppo nessuno ha indovinato il numero misterioso, ma ${player1} ci è andato più vicino!`);
+} else if (diffPlayer1Low < diffPlayer2High || diffPlayer1Low < diffPlayer2Low) {
+  console.log(`Purtroppo nessuno ha indovinato il numero misterioso, ma ${player1} ci è andato più vicino!`);
+} else if (diffPlayer2High < diffPlayer1High || diffPlayer2High < diffPlayer1Low) {
+  console.log(`Purtroppo nessuno ha indovinato il numero misterioso, ma ${player1} ci è andato più vicino!`);
+} else if (diffPlayer2Low < diffPlayer1High || diffPlayer2Low < diffPlayer1Low) {
+  console.log(`Purtroppo nessuno ha indovinato il numero misterioso, ma ${player1} ci è andato più vicino!`);
+} else {
+  console.log(`Purtroppo nessuno ha indovinato il numero misterioso, ed entrambi i giocatori sono ugualmente vicini!`);
+}
+*/
