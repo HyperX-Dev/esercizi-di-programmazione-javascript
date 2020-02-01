@@ -18,3 +18,30 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var voto = 30;
+
+var giudizio1 = 'insufficiente';
+var giudizio2 = 'sufficiente';
+var giudizio3 = 'buono';
+var giudizio4 = 'distinto';
+var giudizio5 = 'ottimo';
+var giudizio6 = 'eccellente';
+var giudizioNull = 'non valido';
+
+if (voto < 18) {
+  (voto = giudizio1);
+} else if (voto >= 18 && voto < 21) {
+  (voto = giudizio2);
+} else if (voto >= 21 && voto < 24) {
+  (voto = giudizio3);
+} else if (voto >= 24 && voto < 27) {
+  (voto = giudizio4);
+} else if (voto >= 27 && voto < 30) {
+  (voto = giudizio5);
+} else if (voto == 30) {
+  (voto = giudizio6);
+} else {
+  (voto = giudizioNull);
+  }
+console.log(`Il voto del candidato è ${voto}.`);
