@@ -44,4 +44,5 @@ if (voto < 18) {
 } else {
   (voto = giudizioNull);
   }
+  
 console.log(`Il voto del candidato è ${voto}.`);
