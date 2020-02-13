@@ -28,3 +28,42 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var num1 = 10;
+var num2 = 20;
+
+var operazione = 'media';
+
+switch (operazione) {
+  case 'somma':
+    console.log(num1+num2);
+    break;
+
+  case 'sottrazione':
+  console.log(num1-num2);
+    break;
+
+  case 'moltiplicazione':
+  console.log(num1*num2);
+    break;
+
+  case 'divisione':
+  console.log(num1/num2);
+    break;
+
+  case 'modulo':
+  console.log(Math.ceil(num1%num2));
+    break;
+
+  case 'potenza':
+  console.log(Math.pow(num1, num2));
+  break;
+
+  case 'media':
+  console.log((num1+num2)/2);
+  break;
+
+  default:
+  console.log(`Mi dispiace, l'operazione non è valida.`);
+
+}
